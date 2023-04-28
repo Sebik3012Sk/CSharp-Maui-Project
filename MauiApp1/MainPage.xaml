@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout>
+
+            <Border Stroke="#771B00" StrokeShape="RoundRectangle 18" Margin="150" Padding="5" WidthRequest="280" HorizontalOptions="Center">
+                <Entry IsPassword="False" Placeholder="Enter your username" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+            </Border>
+
+            <Border Stroke="#771B00" StrokeShape="RoundRectangle 18" Margin="-90" Padding="5" WidthRequest="280" HorizontalOptions="Center">
+                <Entry IsPassword="True" Placeholder="Enter your password" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+            </Border>
+
+            <Border StrokeShape="RoundRectangle 18" Margin="150" WidthRequest="145" HeightRequest="45">
+                <Button Text="Log In" BackgroundColor="#771B00" TextColor="#fff" FontSize="15" Clicked="nextPage"/>
+            </Border>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
