@@ -6,4 +6,13 @@ public partial class NewContent1 : ContentView
 	{
 		InitializeComponent();
 	}
+
+	public String welcome_text
+	{
+		get { return welcome.Text; }
+		set 
+		{
+			welcome.Text = value;
+		}
+	}
 }

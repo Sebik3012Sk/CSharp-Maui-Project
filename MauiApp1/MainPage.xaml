@@ -7,15 +7,19 @@
         <VerticalStackLayout>
 
             <Border Stroke="#771B00" StrokeShape="RoundRectangle 18" Margin="150" Padding="5" WidthRequest="280" HorizontalOptions="Center">
-                <Entry IsPassword="False" Placeholder="Enter your username" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                <Entry x:Name="username" IsPassword="False" Placeholder="Enter your username" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
             </Border>
 
             <Border Stroke="#771B00" StrokeShape="RoundRectangle 18" Margin="-90" Padding="5" WidthRequest="280" HorizontalOptions="Center">
-                <Entry IsPassword="True" Placeholder="Enter your password" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                <Entry x:Name="password" IsPassword="True" Placeholder="Enter your password" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
             </Border>
 
             <Border StrokeShape="RoundRectangle 18" Margin="150" WidthRequest="145" HeightRequest="45">
                 <Button Text="Log In" BackgroundColor="#771B00" TextColor="#fff" FontSize="15" Clicked="nextPage"/>
+            </Border>
+            
+            <Border StrokeShape="RoundRectangle 18" Margin="150" WidthRequest="145" HeightRequest="45">
+                <Button Text="Log In as Guest" BackgroundColor="#771B00" TextColor="#fff" FontSize="15" Clicked="nextPageGuest"/>
             </Border>
 
         </VerticalStackLayout>

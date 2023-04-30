@@ -4,7 +4,8 @@
              x:Class="MauiApp1.NewContent1">
     <VerticalStackLayout>
         <Label 
-            Text="Welcome to .NET MAUI!"
+            x:Name="welcome"
+            Text="Welcome Guest to .NET MAUI!"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
     </VerticalStackLayout>
